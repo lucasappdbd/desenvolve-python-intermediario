@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Novo Post</h1>
+<form method="post">
+    <div>
+        <textarea name="body" rows="5" cols="50" placeholder="Escreva seu post aqui..." required></textarea>
+    </div>
+    <div>
+        <button type="submit">Publicar</button>
+        <a href="{{ url_for('index') }}">Cancelar</a>
+    </div>
+</form>
+{% endblock %}
